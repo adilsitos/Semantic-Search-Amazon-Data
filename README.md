@@ -1,1 +1,1 @@
-# Search-Semantic-Amazon-Data
+# Semantic-Search-Amazon-Data
