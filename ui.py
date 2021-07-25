@@ -15,7 +15,7 @@ inserted by the user. The data used to build this model can be found at [Amazon 
 
 user_input = st.text_input('Book Search', 'A book about machine learning with focus on NLP')
 
-if st.button('Generate Text'):
+if st.button('Search'):
    
     recommendations = semantic_search(user_input, '10')
     df = format_response(recommendations)
@@ -23,11 +23,16 @@ if st.button('Generate Text'):
     for title, description, score in zip(df['title'], df['description'], df['scores'] ):
         
 
-        st.write(f'# Title: {str(title).lower()}')
+        st.write(f'#  {str(title).capitalize()}')
     
-        title_lower = str(title).replace(" ", "+")
-        url = f'(https://www.amazon.com/s?k={title_lower})'
-        st.write('[amazon search]'+url)
+        title_rm_spaces = str(title).replace(" ", "+")
+
+        amazon_url = f'(https://www.amazon.com/s?k={title_rm_spaces})'
+        good_reads_url = f'(https://www.goodreads.com/search?utf8=✓&query={title_rm_spaces}&search_type=books)'
+        
+        st.write('[Search on amazon]'+amazon_url)
+        st.write('[Search on goodreads]'+good_reads_url)
+       
         st.write(f'Recommendation score: {score}')
  
   
