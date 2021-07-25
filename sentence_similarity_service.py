@@ -24,7 +24,7 @@ def tokenize_text(df):
 def semantic_search(text, id):
     try:
         input = json.dumps({"search_string":text,"ID":id})
-        endpoint = ''
+        endpoint = 'http://50a9efd4-bbc1-4e53-b376-f44aac367846.southcentralus.azurecontainer.io/score'
         headers = { 'Content-Type':'application/json'}
 
         resp = requests.post(endpoint, input, headers=headers)
