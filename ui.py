@@ -19,13 +19,14 @@ if st.button('Generate Text'):
    
     recommendations = semantic_search(user_input, '10')
     df = format_response(recommendations)
-    i = 0
+
     for title, description, score in zip(df['title'], df['description'], df['scores'] ):
-        i += 1
-        st.write(f'## Book recommendation {i}')
-        st.write(f'Title: {str(title).lower()}')
+        
+
+        st.write(f'# Title: {str(title).lower()}')
+    
         title_lower = str(title).replace(" ", "+")
-        url = f'(https://www.amazon.com.br/s?k={title_lower})'
+        url = f'(https://www.amazon.com/s?k={title_lower})'
         st.write('[amazon search]'+url)
         st.write(f'Recommendation score: {score}')
  
