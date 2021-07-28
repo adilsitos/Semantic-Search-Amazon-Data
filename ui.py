@@ -48,8 +48,8 @@ if (search_button or user_input) and user_input != '':
         amazon_url = f'(https://www.amazon.com/s?k={title_rm_spaces})'
         good_reads_url = f'(https://www.goodreads.com/search?utf8=✓&query={title_rm_spaces}&search_type=books)'
         
-        st.write('[Search on amazon]'+amazon_url)
-        st.write('[Search on goodreads]'+good_reads_url)
+        st.write('[Search on Amazon]'+amazon_url)
+        st.write('[Search on Goodreads]'+good_reads_url)
     
         st.write(f'Recommendation score: {score}')
     
