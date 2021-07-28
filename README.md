@@ -14,7 +14,7 @@ The application takes a short description as an input from the user, and returns
     <br>
 <p>
     
-A diagram that explains how the application works can be found [here](https://whimsical.com/semantic-search-project-Mh4EHeCzX58fXZVYfFn4T1).
+The full diagram can be found [here](https://whimsical.com/semantic-search-project-Mh4EHeCzX58fXZVYfFn4T1).
 
 ## Code
 
