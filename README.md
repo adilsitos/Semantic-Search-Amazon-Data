@@ -14,7 +14,7 @@ The user interface includes a user feedback feature, which allows a user to repo
 
 ## Code
 
-The [Semantic-Search_Search_with_fastai Notebook](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/Semantic_Search_with_fastai.ipynb) shows the process to obtain the embeddings from the 2,384,197 book descriptions that were used. 
+The [Semantic-Search_Search_with_fastai Notebook](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/Semantic_Search_with_fastai.ipynb) shows the process to obtain the embeddings from the 2,384,197 book descriptions that were used.[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PIMtkozBnfeEvCuAQcHyTCQr7mYF3dLg?usp=sharing)
 
 The code for the Streamlit interface can be found on [ui.py](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/ui.py).
 
