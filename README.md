@@ -8,6 +8,10 @@ The user interface was built with [Streamlit](https://streamlit.io/) and is curr
 
 The application takes a short description as an input from the user, and returns the titles of the most relevant books, based on their similarity score. The application can use one of two models: an AWD-LSTM which can be used with fastai, or a [sentence transformer](https://www.sbert.net/) from Hugging Face.
 
+<h3 align="center">
+    <p>Diagram of the Inference Workflow in the Application</p>
+</h3>
+
 <p align="center">
     <br>
     <img src="https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/Semantic%20Search%20Project%402x.png" width="1000"/>
