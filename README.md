@@ -10,8 +10,6 @@ The application takes a short description as an input from the user, and returns
 
 A diagram that explains how the application works can be found [here](https://whimsical.com/semantic-search-project-Mh4EHeCzX58fXZVYfFn4T1).
 
-The user interface includes a user feedback feature, which allows a user to report whether the recommendations were relevant or not. This feedback and the recommendations that the user received are stored in a web service hosted on Heroku.
-
 ## Code
 
 The [Semantic-Search_Search_with_fastai Notebook](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/Semantic_Search_with_fastai.ipynb) shows the process to obtain the embeddings from the 2,384,197 book descriptions that were used. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PIMtkozBnfeEvCuAQcHyTCQr7mYF3dLg?usp=sharing)
@@ -19,3 +17,9 @@ The [Semantic-Search_Search_with_fastai Notebook](https://github.com/Adilsitos/S
 The code for the Streamlit interface can be found on [ui.py](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/ui.py).
 
 The code related to the Azure ML web service is found in [sentence_similarity.py](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/sentence_similarity.py) and [sentence_similarity_service.py](https://github.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/sentence_similarity_service.py). 
+
+## User Feedback Web Service
+
+The user interface includes a user feedback feature, which allows a user to report whether the recommendations were relevant or not. This feedback and the recommendations that the user received are stored in a web service hosted on Heroku.
+The web service was developed in a separate repo, which can be found [here](https://github.com/Adilsitos/webservice-semantic-search).
+
