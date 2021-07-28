@@ -1,6 +1,6 @@
 # Semantic Search for Book Recommendations with Amazon Data
 
-This repository contains the experiments to create the embeddings of book descriptions from the Book metadata that is part of the [Amazon Review dataset](https://nijianmo.github.io/amazon/index.html)(Jianmo Ni, Jiacheng Li, Julian McAuley. Empirical Methods in Natural Language Processing (EMNLP), 2019). The project was completed as part of the [Queensland AI](https://www.qldaihub.com/) fastai Community Course.
+This repository contains the experiments to create the embeddings of book descriptions from the Book metadata that is part of the [Amazon Review dataset](https://nijianmo.github.io/amazon/index.html) (Jianmo Ni, Jiacheng Li, Julian McAuley. Empirical Methods in Natural Language Processing (EMNLP), 2019). The project was completed as part of the [Queensland AI](https://www.qldaihub.com/) fastai Community Course.
 
 ## Application
 
