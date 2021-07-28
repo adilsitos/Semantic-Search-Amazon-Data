@@ -44,6 +44,28 @@ def format_response(results):
         return f'Error: Results is not a str type'
 
 
+def analytics_service(df, user_input, feedback):
+    try:
+        input = json.dumps({
+            "users_response": feedback,
+            "searched_query": user_input,
+            "first": df.iloc[0]['title'],
+            "first_score": df.iloc[0]['scores'],
+            "second": df.iloc[1]['title'],
+            "second_score": df.iloc[0]['scores'],
+            "third": df.iloc[2]['title'],
+            "third_score": df.iloc[0]['scores']
+        })
+        headers = { 'Content-Type':'application/json'}
+        url = 'https://semanticsearchamazon.herokuapp.com'
+        endpoint =  url + '/api/recommendations/'
+        requests.post(endpoint, input, headers=headers)
+        return 
+    except Error:
+        return
+
+
+
 
 
 
