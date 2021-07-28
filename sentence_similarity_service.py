@@ -1,24 +1,7 @@
 from copy import Error
-from fastai.text.all import *
 import pandas as pd
 import requests
 import json
-
-def load_model():
-    learn = load_learner('./10_with_encoder.pth')   
-    return learn
-
-
-def tokenize_text(df):
-    tokenized_text = []
-    dls = torch.load('./dataloader.pkl')
-
-    for description in df['description']:
-        tok_description = dls.tokenizer(description)
-        num_description = dls.numericalize(tok_description)
-        tokenized_text.append(num_description)
-
-    return tokenized_text
 
 
 def semantic_search(text, id):
