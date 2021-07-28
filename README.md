@@ -17,6 +17,7 @@ The application takes a short description as an input from the user, and returns
 <p>
     
 The full interactive version of the diagram can be found [here](https://whimsical.com/semantic-search-project-Mh4EHeCzX58fXZVYfFn4T1).
+    
 
 ## Code
 
