@@ -12,7 +12,8 @@ The application takes a short description as an input from the user, and returns
     <br>
     <img src="https://raw.githubusercontent.com/Adilsitos/Semantic-Search-Amazon-Data/blob/main/Semantic%20Search%20Project%402x.png" width="400"/>
     <br>
-
+<p>
+    
 A diagram that explains how the application works can be found [here](https://whimsical.com/semantic-search-project-Mh4EHeCzX58fXZVYfFn4T1).
 
 ## Code
