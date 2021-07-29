@@ -35,7 +35,7 @@ def format_response(results):
 def analytics_service(df, user_input, feedback):
     try:
         input = json.dumps({
-            "users_response": feedback,
+            "user_response": feedback,
             "searched_query": user_input,
             "first": df.iloc[0]['title'],
             "first_score": df.iloc[0]['scores'],
