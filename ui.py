@@ -31,7 +31,8 @@ if (search_button or user_input) and user_input != '':
         negative_btn = st.button("No")
 
     if positive_btn:
-        st.write("Thank you for your feedback")
+        st.write("Thank you for your feedback! "
+        "We appreciate your interest in improve our system 🙌")
         analytics_service(df, user_input, 1)
         
 
