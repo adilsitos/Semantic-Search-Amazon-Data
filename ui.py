@@ -32,12 +32,12 @@ if (search_button or user_input) and user_input != '':
 
     if positive_btn:
         st.write("Thank you for your feedback")
-        analytics_service(df, user_input, "true")
+        analytics_service(df, user_input, 1)
 
     if negative_btn:
         st.write("Thank you for your feedback! "
         "We appreciate your interest in improve our system 🙌")
-        analytics_service(df, user_input, "false")
+        analytics_service(df, user_input, 0)
 
     for title, description, score in zip(df['title'], df['description'], df['scores'] ):
         

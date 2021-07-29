@@ -3,6 +3,11 @@ import pandas as pd
 import requests
 import json
 
+"""
+    This file make requestions to the azure ml api and web service analytics, where is hosted the ml model and the data 
+    collected from the user feedback respectively
+"""
+
 
 def semantic_search(text, id):
     try:
